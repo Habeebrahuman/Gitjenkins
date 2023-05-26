@@ -1,0 +1,4 @@
+# Created at 2023-05-27T00:10:37.681
+
+Two tests in the same suite [sanity Suite] cannot have the same name: Test
+
