@@ -18,7 +18,7 @@ public class google_test {
 	public void validategoogle() throws IOException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.google.com/");
+		driver.get("https://www.edge.com/");
 		driver.findElement(By.xpath("//textarea[@class='gLFyf']")).sendKeys("Theni");
 		driver.findElement(By.xpath("//textarea[@class='gLFyf']")).submit();
 		
