@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
 
@@ -16,9 +17,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class google_test {
 	@Test
 	public void validategoogle() throws IOException {
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.edge.com/");
+		WebDriverManager.edgedriver().setup();
+		WebDriver driver = new EdgeDriver();
+		driver.get("https://www.google.com/");
 		driver.findElement(By.xpath("//textarea[@class='gLFyf']")).sendKeys("Theni");
 		driver.findElement(By.xpath("//textarea[@class='gLFyf']")).submit();
 		
